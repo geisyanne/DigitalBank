@@ -8,7 +8,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import co.geisyanne.digitalbank.R
 import co.geisyanne.digitalbank.databinding.FragmentRegisterBinding
+import co.geisyanne.digitalbank.util.initToolbar
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RegisterFragment : Fragment() {
 
     private var _binding: FragmentRegisterBinding? = null
@@ -25,6 +28,7 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        initToolbar(binding.toolbarRegister)
         initListeners()
     }
 
@@ -45,18 +49,10 @@ class RegisterFragment : Fragment() {
             if (email.isNotEmpty()) {
                 if (phone.isNotEmpty()) {
                     if (password.isNotEmpty()) {
-                        if (passwordConfirm.isNotEmpty()) {
 
-                            Toast.makeText(requireContext(), "Registrando...", Toast.LENGTH_SHORT)
-                                .show()
+                        Toast.makeText(requireContext(), "Registrando...", Toast.LENGTH_SHORT)
+                            .show()
 
-                        } else {
-                            Toast.makeText(
-                                requireContext(),
-                                R.string.enter_confirm_password,
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
                     } else {
                         Toast.makeText(
                             requireContext(), R.string.enter_password, Toast.LENGTH_SHORT

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "662232315889",
+    "project_id": "digitalbank-7baf4",
+    "storage_bucket": "digitalbank-7baf4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662232315889:android:7739f2554d0cfdb6087650",
+        "android_client_info": {
+          "package_name": "co.geisyanne.digitalbank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGxKQHqGo0nXU96tv9vO9Ix1gKfJ7hzro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

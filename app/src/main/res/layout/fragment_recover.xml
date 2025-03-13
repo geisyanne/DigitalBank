@@ -22,19 +22,28 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbar_recover"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/color_default"
                     android:layout_gravity="center_horizontal"
                     android:text="Recuperar senha" />
 
             </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
 
         <TextView
             android:id="@+id/textView"
@@ -60,18 +69,16 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
+            style="@style/Theme.EditText"
             android:id="@+id/edit_email_recover"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="4dp"
-            android:background="@drawable/bg_edit_around"
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="8dp"
             android:drawableTint="@color/color_default"
             android:hint="Digite seu email"
-            android:padding="14dp"
-            android:textColorHint="@color/color_text_hint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -93,6 +100,8 @@
             android:id="@+id/progress_recover"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="invisible"
+            tools:visibility="visible"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="24dp"
             android:indeterminateTint="@color/color_default"

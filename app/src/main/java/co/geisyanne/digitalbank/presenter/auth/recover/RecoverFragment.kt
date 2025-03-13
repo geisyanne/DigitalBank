@@ -8,7 +8,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import co.geisyanne.digitalbank.R
 import co.geisyanne.digitalbank.databinding.FragmentRecoverBinding
+import co.geisyanne.digitalbank.util.initToolbar
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RecoverFragment : Fragment() {
 
     private var _binding: FragmentRecoverBinding? = null
@@ -25,6 +28,7 @@ class RecoverFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        initToolbar(binding.toolbarRecover)
         initListeners()
     }
 

@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="co.geisyanne.digitalbank" />
+                  <option name="mobileSdkAppId" value="1:662232315889:android:7739f2554d0cfdb6087650" />
+                  <option name="projectId" value="digitalbank-7baf4" />
+                  <option name="projectNumber" value="662232315889" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
