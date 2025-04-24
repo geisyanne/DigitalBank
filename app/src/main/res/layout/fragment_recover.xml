@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/color_default"
                     android:layout_gravity="center_horizontal"
-                    android:text="Recuperar senha" />
+                    android:text="@string/recover_account" />
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
             android:paddingHorizontal="24dp"
-            android:text="@string/recover_account"
+            android:text="@string/msg_recover_account"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
-            android:text="E-mail"
+            android:text="@string/email"
             android:textColor="@color/color_default"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -75,10 +75,11 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="4dp"
+            android:inputType="textEmailAddress"
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="8dp"
             android:drawableTint="@color/color_default"
-            android:hint="Digite seu email"
+            android:hint="@string/enter_your_email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +91,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
             android:background="@drawable/bg_btn"
-            android:text="ENVIAR E-MAIL"
+            android:text="@string/send_email"
+            android:textAllCaps="true"
             app:backgroundTint="@null"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

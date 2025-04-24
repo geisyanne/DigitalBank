@@ -29,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/color_default"
-                    android:text="Criar conta" />
+                    android:text="@string/create_account" />
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -53,7 +53,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nome"
+                android:text="@string/name"
                 android:textColor="@color/color_default" />
 
             <EditText
@@ -64,34 +64,35 @@
                 android:layout_marginTop="4dp"
                 android:drawableStart="@drawable/ic_user_fill"
                 android:drawablePadding="8dp"
+                android:inputType="textPersonName"
                 android:drawableTint="@color/color_default"
-                android:hint="Digite seu nome" />
+                android:hint="@string/enter_your_name" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Email"
+                android:text="@string/email"
                 android:textColor="@color/color_default" />
 
             <EditText
                 style="@style/Theme.EditText"
-
                 android:id="@+id/edit_email_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:drawableStart="@drawable/ic_email"
                 android:drawablePadding="8dp"
+                android:inputType="textEmailAddress"
                 android:drawableTint="@color/color_default"
-                android:hint="Digite seu email"
+                android:hint="@string/enter_your_email"
                 android:paddingHorizontal="14dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Telefone"
+                android:text="@string/phone"
                 android:textColor="@color/color_default" />
 
             <EditText
@@ -102,14 +103,15 @@
                 android:layout_marginTop="4dp"
                 android:drawableStart="@drawable/ic_phone_fill"
                 android:drawablePadding="8dp"
+                android:inputType="phone"
                 android:drawableTint="@color/color_default"
-                android:hint="Digite seu telefone" />
+                android:hint="@string/enter_your_phone" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Senha"
+                android:text="@string/password"
                 android:textColor="@color/color_default" />
 
             <EditText
@@ -120,14 +122,15 @@
                 android:layout_marginTop="4dp"
                 android:drawableStart="@drawable/ic_padlock"
                 android:drawablePadding="8dp"
+                android:inputType="textPassword"
                 android:drawableTint="@color/color_default"
-                android:hint="Digite uma senha" />
+                android:hint="@string/hint_password" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Confirmação de senha"
+                android:text="@string/confirm_your_password"
                 android:textColor="@color/color_default" />
 
             <EditText
@@ -138,8 +141,9 @@
                 android:layout_marginTop="4dp"
                 android:drawableStart="@drawable/ic_padlock"
                 android:drawablePadding="8dp"
+                android:inputType="textPassword"
                 android:drawableTint="@color/color_default"
-                android:hint="Confirme a senha" />
+                android:hint="@string/hint_confirm_password" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_register"
@@ -147,7 +151,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_btn"
-                android:text="CADASTRAR"
+                android:text="@string/register"
+                android:textAllCaps="true"
                 app:backgroundTint="@null" />
 
             <ProgressBar

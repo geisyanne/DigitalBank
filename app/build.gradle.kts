@@ -49,13 +49,17 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
+    implementation(libs.lifecycle.viewmodel)
+    implementation(libs.lifecycle.livedata)
+
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+
     implementation(platform(libs.google.firebase))
     implementation(libs.google.firebase.auth)
     implementation(libs.google.firebase.database)
 
     implementation(libs.google.dagger.hilt)
-    implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
     kapt(libs.google.dagger.hilt.compiler)
 
     testImplementation(libs.junit)
